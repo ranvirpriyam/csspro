@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    font-family: monotype corsiva;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: -2px -2px 2px blue;
+    writing-mode: horizontal-tb;
+    background-color: rgb(248, 187, 112);    
+}
+#con{
+    height: 500px;
+    width: 600px;
+    border: 3px solid black;
+}
+#ele{
+    height: 100px;
+    width: 100px;
+    border: 2px solid maroon;
+    animation-name: movingB;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;   
+}
+#ele:hover{
+    
+}
+@keyframes movingB {
+    0%{
+        transform: translate(500px, 0px);
+        border-radius: 50%;
+        background-color: maroon;
+    }
+    25%{
+        transform: translate(500px, 400px);
+        border-radius: 0%;
+        background-color: red;
+    }
+    50%{
+        transform: translate(0px, 400px);
+        border-radius: 50%;
+        background-color: brown;
+    }
+    75%{
+        transform: translate(0px, 0px);
+        border-radius: 0%;
+        background-color: orangered;
+    }
+    100%{
+        transform: translate(500px, 0px);
+        border-radius: 50%;
+        background-color: black;
+    }
+}
